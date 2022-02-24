@@ -16,9 +16,9 @@ sh install.sh
 
 ### Windows and unknown folder location
 
-1. Download the .zip file
+1. [Download the .zip file](https://github.com/Rimseg/typora-theme-rim/releases/tag/latest).
 2. Look up where your [Typora theme folder](https://theme.typora.io/doc/Install-Theme/ ) is located.
-3. Extract the .zip file there 
+3. Extract the .zip file there.
 
 ## Easy Customisation
 

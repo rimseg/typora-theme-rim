@@ -93,7 +93,7 @@
 	/* text color */
 	--c-heading: #152E45;
 	--c-text: #13202C;
-	--c-code: #13202C;
+	--c-code: #00711e;
 	--c-link: #3E3282;
 
 	/* color */
@@ -129,7 +129,8 @@
 	--mb-hx: 1rem;
 
 	/* border */
-	--border-md: 1px solid #E7EAED;
+	--border-ui: 1px solid #E7EAED;
+	--border-table: 1px solid #ccc;
 }
 
 html {
@@ -143,9 +144,9 @@ body {
 
 /* writer */
 content {
-	border-top: var(--border-md);
-	border-bottom: var(--border-md);
-	border-right: var(--border-md);
+	border-top: var(--border-ui);
+	border-bottom: var(--border-ui);
+	border-right: var(--border-ui);
 }
 #write {
 	max-width: var(--w-writer-md);
@@ -263,7 +264,7 @@ hr {
 	height: 2px;
 	padding: 0;
 	margin: 16px 0;
-	background-color: #e7e7e7;
+	background-color: var(--border-table);
 	border: 0 none;
 	overflow: hidden;
 	box-sizing: content-box;
@@ -298,25 +299,20 @@ table {
 	word-break: initial;
 }
 table tr {
-	border: var(--border-md);
+	border-bottom: var(--border-table);
 	margin: 0;
 	padding: 0;
 }
-table tr:nth-child(2n),
-thead {
-	background-color: #f8f8f8;
-}
 table th {
+	font-family: var(--font-heading);
 	font-weight: bold;
-	border: var(--border-md);
-	border-bottom: 0;
+	border-bottom: var(--border-table);
 	margin: 0;
-	padding: 6px 13px;
+	padding: 6px 0;
 }
 table td {
-	border: var(--border-md);
 	margin: 0;
-	padding: 6px 13px;
+	padding: 6px 0;
 }
 table th:first-child,
 table td:first-child {
@@ -333,7 +329,7 @@ table td:last-child {
 }
 .code-tooltip {
 	box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
-	border-top: var(--border-md);
+	border-top: var(--border-ui);
 }
 
 .md-fences,
@@ -342,9 +338,9 @@ tt {
 	font-family: var(--font-code), monospace;
 	font-weight: var(--fw-code);
 	line-height: var(--lh-md);
-	border: var(--border-md);
+	border: var(--border-ui);
 	background-color: var(--c-bg-code);
-	border-radius: 8px;
+	border-radius: 3px;
 	font-size: var(--fs-code);
 }
 
@@ -354,6 +350,14 @@ tt {
 	padding-top: 8px;
 	padding-bottom: 6px;
 	background-color: var(--c-bg-code);
+}
+
+.md-pair-s code {
+	font-family: var(--fs-text);
+	font-size: var(--fs-text);
+	color: var(--c-code);
+	background-color: transparent;
+	border: 0;
 }
 
 .md-task-list-item > input {
@@ -400,7 +404,7 @@ tt {
 	top: .285714286rem;
 }
 .md-image>.md-meta {
-	border: var(--border-md) 
+	border: var(--border-ui) 
 	border-radius: 3px;
 	padding: 2px 0px 0px 4px;
 	font-size: var(--fs-code);

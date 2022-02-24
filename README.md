@@ -1,12 +1,24 @@
+![](preview.png)
+
 # Typora Theme: Rim
 
-This theme aims to implement standard typographic rules for a Typora theme.
-The GitHub theme for Typora has been used as template.
+Light minimalist Typora Theme, which respects your eyes.
 
 ## Usage
 
-Copy the files into your Typora Theme folder (typically placed in `~/.config/Typora/themes
- `). Include the folder `rim` it contains the fonts used for the Theme.
+If your running **Linux** or **Mac** you can use the `install.sh` script.
+
+```bash
+git clone https://github.com/Rimseg/typora-theme-rim
+cd typora-theme-rim
+sh install.sh
+```
+
+### Windows and unknown folder location
+
+1. Download the .zip file
+2. Look up where your [Typora theme folder](https://theme.typora.io/doc/Install-Theme/ ) is located.
+3. Extract the .zip file there 
 
 ## Easy Customisation
 
@@ -45,6 +57,7 @@ Edit the file variables to get the style you prefer.
 
 	/* font-sizes */
 	--fs-base: 18px;
+	--fs-print: 13px;
 	--fs-h1: 1.9rem;
 	--fs-h2: 1.6rem;
 	--fs-h3: 1.3rem;
@@ -69,6 +82,8 @@ Edit the file variables to get the style you prefer.
 	--mb-hx: 1rem;
 
 	/* border */
-	--border-md: 1px solid #E7EAED;
+	--border-ui: 1px solid #E7EAED;
+	--border-table: 1px solid #ccc;
 }
 ```
+

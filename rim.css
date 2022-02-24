@@ -1,0 +1,493 @@
+/* Font: Raleway */
+@font-face {
+	font-family: 'Raleway';
+	src: url('rim/Raleway-SemiBoldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('rim/Raleway-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('rim/Raleway-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('rim/Raleway-BoldItalic.woff2') format('woff2');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+/* Font: Nunito Sans */
+@font-face {
+	font-family: 'Nunito Sans';
+	src: url('rim/NunitoSans-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Nunito Sans';
+	src: url('rim/NunitoSans-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Nunito Sans';
+	src: url('rim/NunitoSans-BoldItalic.woff2') format('woff2');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Nunito Sans';
+	src: url('rim/NunitoSans-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/* Font: Fira Code */
+@font-face {
+	font-family: 'Fira Code';
+	src: url('rim/FiraCode-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Fira Code';
+	src: url('rim/FiraCode-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	/* fonts */
+	--font-heading: "Raleway";
+	--font-text: "Nunito Sans";
+	--font-code: "Fira Code";
+
+	/* font-weight */
+	--fw-heading-h1: bold;
+	--fw-heading-h2: bold;
+	--fw-heading: 600;
+	--fw-text: normal;
+	--fw-code: normal;
+	
+	/* line-height */
+	--lh-s: 1.3;
+	--lh-md: 1.4;
+	--lh-l: 1.8;
+	
+	/* text color */
+	--c-heading: #152E45;
+	--c-text: #13202C;
+	--c-code: #13202C;
+	--c-link: #3E3282;
+
+	/* color */
+	--c-bg: #FFFCF9;
+	--side-bar-bg-color: #F5F5F5;
+	--c-bg-code: #F8F6F6;
+	--c-primary: #4E3E8B;
+
+	/* font-sizes */
+	--fs-base: 18px;
+	--fs-print: 13px;
+	--fs-h1: 1.9rem;
+	--fs-h2: 1.6rem;
+	--fs-h3: 1.3rem;
+	--fs-h4: 1.15rem;
+	--fs-h5: 1rem;
+	--fs-h6: 1rem;
+	--fs-text: 1rem;
+	--fs-code: .8rem;
+	--fs-sidebar: .8rem;
+
+	/* spacing */
+	--w-writer-xl: 860px;
+	--w-writer-l: 820px;
+	--w-writer-md: 780px;
+	--mt-h1: 1rem;
+	--mt-h2: 2.2rem;
+	--mt-h3: 2rem;
+	--mt-h4: 1.8rem;
+	--mt-h5: 1.6rem;
+	--mt-h6: 1.6rem;
+	--mt-hx-hx: 1rem;
+	--mb-hx: 1rem;
+
+	/* border */
+	--border-md: 1px solid #E7EAED;
+}
+
+html {
+	font-size: var(--fs-base);
+}
+body {
+	font-family: var(--font-text), "sans-serif";
+	line-height: var(--lh-l);
+	background-color: var(--c-bg);
+}
+
+/* writer */
+content {
+	border-top: var(--border-md);
+	border-bottom: var(--border-md);
+	border-right: var(--border-md);
+}
+#write {
+	max-width: var(--w-writer-md);
+	margin: 0 auto;
+	padding: 30px;
+	padding-bottom: 100px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: #aaa;
+	border-radius: 8px;
+	padding: 3px 0;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #ccc;
+}
+
+
+/* typo */
+a {
+	color: var(--c-link);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-heading), sans-serif;
+	line-height: var(--lh-s);
+	color: var(--c-heading);
+	margin-bottom: var(--mb-hx);
+	font-weight: var(--fw-heading);
+}
+h1 tt,
+h1 code {
+	font-size: inherit;
+}
+h2 tt,
+h2 code {
+	font-size: inherit;
+}
+h3 tt,
+h3 code {
+	font-size: inherit;
+}
+h4 tt,
+h4 code {
+	font-size: inherit;
+}
+h5 tt,
+h5 code {
+	font-size: inherit;
+}
+h6 tt,
+h6 code {
+	font-size: inherit;
+}
+h1 {
+	font-size: var(--fs-h1);
+	font-weight: var(--fw-heading-h1);
+	margin-top: var(--mt-h1);
+}
+h2 {
+	font-size: var(--fs-h2);
+	font-weight: var(--fw-heading-h2);
+	margin-top: var(--mt-h2);
+}
+h3 {
+	font-size: var(--fs-h3);
+	margin-top: var(--mt-h3);
+}
+h4 {
+	font-size: var(--fs-h4);
+	margin-top: var(--mt-h4);
+}
+h5 {
+	font-size: var(--fs-h5);
+	margin-top: var(--mt-h5);
+}
+h6 {
+	font-size: var(--fs-h6);
+	margin-top: var(--mt-h6);
+	color: #47525D;
+}
+h1 + h2,
+h2 + h2,
+h2 + h3,
+h3 + h3,
+h3 + h4,
+h4 + h4,
+h4 + h5,
+h5 + h6 {
+	margin-top: var(--mt-hx-hx);
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+	font-size: var(--fs-text);
+	color: var(--c-text);
+	margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+	margin: 0 0;
+}
+hr {
+	height: 2px;
+	padding: 0;
+	margin: 16px 0;
+	background-color: #e7e7e7;
+	border: 0 none;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+
+li p.first {
+	display: inline-block;
+}
+ul,
+ol {
+	padding-left: 20px;
+}
+ul:first-child,
+ol:first-child {
+	margin-top: 0;
+}
+.outline-item {
+	font-size: var(--fs-sidebar);
+}
+blockquote {
+	border-left: 3px solid var(--c-primary);
+	padding: 0 15px 0 17px;
+}
+blockquote blockquote {
+	padding-right: 0;
+}
+
+/* table */
+table {
+	font-size: var(--fs-code);
+	padding: 0;
+	word-break: initial;
+}
+table tr {
+	border: var(--border-md);
+	margin: 0;
+	padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+	background-color: #f8f8f8;
+}
+table th {
+	font-weight: bold;
+	border: var(--border-md);
+	border-bottom: 0;
+	margin: 0;
+	padding: 6px 13px;
+}
+table td {
+	border: var(--border-md);
+	margin: 0;
+	padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+	margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+	margin-bottom: 0;
+}
+
+/* elements */
+.CodeMirror-lines {
+	padding-left: 4px;
+}
+.code-tooltip {
+	box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+	border-top: var(--border-md);
+}
+
+.md-fences,
+code,
+tt {
+	font-family: var(--font-code), monospace;
+	font-weight: var(--fw-code);
+	line-height: var(--lh-md);
+	border: var(--border-md);
+	background-color: var(--c-bg-code);
+	border-radius: 8px;
+	font-size: var(--fs-code);
+}
+
+.md-fences {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	background-color: var(--c-bg-code);
+}
+
+.md-task-list-item > input {
+	margin-left: -1.3em;
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+	margin-top: 30px;
+}
+
+#write pre.md-meta-block {
+	padding: 1rem;
+	font-size: 85%;
+	line-height: 1.45;
+	border: 0;
+	border-radius: 3px;
+	color: #777777;
+	margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+	background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+	border: var(--border-md) 
+	border-radius: 3px;
+	padding: 2px 0px 0px 4px;
+	font-size: var(--fs-code);
+	color: inherit;
+}
+
+.md-tag {
+	color: #aaa;
+	opacity: 1;
+}
+
+.md-toc { 
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sidebar-tabs {
+	border-bottom: none;
+}
+
+#typora-quick-open {
+	border: 1px solid #ddd;
+	background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+	background-color: #FAFAFA;
+	border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/* focus mode */
+.on-focus-mode blockquote {
+	border-color: #ccc;
+}
+header, .context-menu, .megamenu-content, footer{
+	font-family: var(--font-text);
+}
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+	visibility: visible;
+}
+.md-lang {
+	color: #b4654d;
+}
+#md-notification .btn {
+	border: 0;
+}
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+	opacity: 0.4;
+}
+.ty-preferences .window-content {
+	background-color: #fafafa;
+}
+.ty-preferences .nav-group-item.active {
+	color: white;
+	background: #999;
+}
+.menu-item-container a.menu-style-btn {
+	background-color: #f5f8fa;
+	background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+/* media querys */
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: var(--w-writer-l);
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: var(--w-writer-xl);
+	}
+}
+
+@media print {
+	html {
+		font-size: var(--fs-print);
+	}
+	table,
+	pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}

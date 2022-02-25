@@ -88,7 +88,7 @@
 	/* line-height */
 	--lh-s: 1.3;
 	--lh-md: 1.4;
-	--lh-l: 1.8;
+	--lh-l: 1.7;
 	
 	/* text color */
 	--c-heading: #152E45;
@@ -120,7 +120,7 @@
 	--w-writer-l: 820px;
 	--w-writer-md: 780px;
 	--mt-h1: 1rem;
-	--mt-h2: 2.2rem;
+	--mt-h2: 2.4rem;
 	--mt-h3: 2rem;
 	--mt-h4: 1.8rem;
 	--mt-h5: 1.6rem;
@@ -264,7 +264,7 @@ hr {
 	height: 2px;
 	padding: 0;
 	margin: 16px 0;
-	background-color: var(--border-table);
+	background-color: #dedede;
 	border: 0 none;
 	overflow: hidden;
 	box-sizing: content-box;
